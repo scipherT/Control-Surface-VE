@@ -28,8 +28,7 @@
  * THE SOFTWARE.
  */
 
-#ifndef Encoder_h_
-#define Encoder_h_
+#pragma once 
 
 #include <AH/Arduino-Wrapper.h>
 #include <Settings/NamespaceSettings.hpp>
@@ -126,5 +125,3 @@ class Encoder {
 END_CS_NAMESPACE
 
 #include "Encoder.ipp"
-
-#endif
