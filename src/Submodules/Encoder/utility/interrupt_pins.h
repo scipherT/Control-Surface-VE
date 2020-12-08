@@ -319,6 +319,10 @@
   #define CORE_INT12_PIN	12
   #define CORE_INT13_PIN	13
 
+// STM32
+#elif defined(ARDUINO_ARCH_STM32)
+  #define CORE_NUM_INTERRUPT	NUM_DIGITAL_PINS
+
 #endif
 #endif
 
@@ -329,4 +333,3 @@
 #error "Encoder requires interrupt pins, but this board does not have any :("
 #error "You could try defining ENCODER_DO_NOT_USE_INTERRUPTS as a kludge."
 #endif
-

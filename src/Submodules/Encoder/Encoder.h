@@ -55,6 +55,8 @@ struct Encoder_internal_state_t {
     int32_t position;
 };
 
+/// Class for reading quadrature encoders, based on 
+/// http://www.pjrc.com/teensy/td_libs_Encoder.html
 class Encoder {
   public:
     /**

@@ -99,6 +99,13 @@ IO_REG_TYPE directRead(volatile IO_REG_TYPE *base, IO_REG_TYPE pin)
 }
 #define DIRECT_PIN_READ(base, pin)      directRead(base, pin)
 
+#elif defined(ARDUINO_ARCH_STM32) /* STM32 */
+
+#define IO_REG_TYPE                     uint32_t
+#define PIN_TO_BASEREG(pin)             (portInputRegister(digitalPinToPort(pin)))
+#define PIN_TO_BITMASK(pin)             (digitalPinToBitMask(pin))
+#define DIRECT_PIN_READ(base, mask)     (((*(base)) & (mask)) ? 1 : 0)
+
 #endif
 
 #endif
