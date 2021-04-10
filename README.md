@@ -3,11 +3,13 @@
 [![Build Status](https://travis-ci.org/tttapa/Control-Surface.svg?branch=master)](https://travis-ci.org/tttapa/Control-Surface)
 [![GitHub](https://img.shields.io/github/stars/tttapa/Control-Surface?label=GitHub&logo=github)](https://github.com/tttapa/Control-Surface)
 
-# Control Surface
+# Control Surface Velocity Edition
 
-An Arduino library for MIDI control surfaces (input and output).  
+An Arduino library for MIDI control surfaces (input and output),
+based on ttapa/Control-Surface. This project aims to add certain features that I
+personally find missing, the main one being support for a velocity sensitive Keybed.
 It includes a general-purpose MIDI abstraction layer as well, which can be useful
-for any MIDI-related project.
+for any MIDI-related project. I currently try to keep this project as close to the original ttapa/Control-Surface as possible, with the possible future goal to ask if the owner of that project might want to merge my additions into the original project.
 
 ## Overview
 
